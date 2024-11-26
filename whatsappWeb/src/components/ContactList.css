@@ -1,0 +1,19 @@
+.contact-list {
+    width: 30%;
+    height: 100%;
+    background-color: #f7f7f7;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+  }
+  
+  .contact {
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .contact.active {
+    background-color: #e7e7e7;
+    font-weight: bold;
+  }
+  
