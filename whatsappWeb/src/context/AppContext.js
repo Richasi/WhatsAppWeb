@@ -34,10 +34,10 @@ export const AppProvider = ({ children }) => {
   useEffect(() => {
     // Initialize contacts
     const contacts = [
-      { id: 1, name: "Neha Sharma" },
-      { id: 2, name: "Olive Doe" },
-      { id: 3, name: "Mark Zuber" },
-      { id: 4, name: "Aaditya Kumar" },
+      { id: 1, name: "Richa Singh" },
+      { id: 2, name: "Mark Kumar" },
+      { id: 3, name: "Nisha Arora" },
+      { id: 4, name: "Swaraj Sharma " },
     ];
     dispatch({ type: "SET_CONTACTS", payload: contacts });
   }, []);
