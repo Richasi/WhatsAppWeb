@@ -6,7 +6,7 @@ import "./App.css";
 const App = () => {
   return (
     <div className="app">
-      <h1>Welcome</h1>
+      <h1>WhatsApp</h1>
       <div className="flexContainer">
       <ContactList />
       <ChatWindow />
