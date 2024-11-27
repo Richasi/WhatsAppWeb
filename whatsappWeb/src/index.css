@@ -1,56 +1,61 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  height: 100vh;
-}
-
+/* index.css */
 .app {
   display: flex;
-  flex: 1;
+}
+
+.sidebar {
+  width: 250px;
+  border-right: 1px solid #ddd;
+  padding: 10px;
 }
 
 .contact-list {
-  width: 30%;
-  background: #f0f0f0;
-  border-right: 1px solid #ccc;
-  overflow-y: auto;
+  list-style: none;
+  padding: 0;
 }
 
-.contact {
+.contact-item {
   padding: 10px;
   cursor: pointer;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
 }
 
-.contact.active {
-  background: #e0e0e0;
+.contact-item:hover {
+  background-color: #f0f0f0;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
 }
 
 .chat-window {
-  width: 70%;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
-.messages {
+.chat-header {
+  background-color: #128C7E;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.chat-messages {
   flex: 1;
-  overflow-y: auto;
+  overflow-y: scroll;
   padding: 10px;
 }
 
 .message {
-  padding: 5px 10px;
-  margin: 5px 0;
-  background: #e0f7fa;
-  border-radius: 5px;
-  max-width: 60%;
+  margin-bottom: 10px;
 }
 
 .message-input {
   display: flex;
   padding: 10px;
-  border-top: 1px solid #ccc;
+  background-color: #f0f0f0;
 }
 
 .message-input input {
@@ -61,11 +66,15 @@ body {
 }
 
 .message-input button {
-  padding: 10px 15px;
   margin-left: 10px;
-  background: #007bff;
+  padding: 10px 20px;
+  background-color: #128C7E;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+h1{
+  color: green;
+  margin: auto;
 }
