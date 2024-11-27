@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex: 1;
+}
+
+.contact-list {
+  width: 30%;
+  background: #f0f0f0;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.contact {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact.active {
+  background: #e0e0e0;
+}
+
+.chat-window {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message {
+  padding: 5px 10px;
+  margin: 5px 0;
+  background: #e0f7fa;
+  border-radius: 5px;
+  max-width: 60%;
+}
+
+.message-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message-input button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
